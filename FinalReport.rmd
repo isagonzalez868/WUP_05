@@ -43,8 +43,15 @@ By looking at the graph results, the vaccine appears to make women more suscepti
 
 
 ### Numerical Descriptive Results
-
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=triumpF)
+rowPerc(table1)
+colPerc(table1)
+```
+Numerical results show that among women who received the vaccine, there was a 40/60 ratio who acquired aids.
 
 ## Inferential Results
 
